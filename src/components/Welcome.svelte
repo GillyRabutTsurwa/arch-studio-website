@@ -84,6 +84,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: 25rem;
+        margin-bottom: 15rem;
+
     }
 
     .small-team div {

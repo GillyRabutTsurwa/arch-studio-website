@@ -6,8 +6,12 @@
     let photo = "./static/image-welcome.jpg"
 
     import Header from "../components/Header.svelte"; 
-    import Welcome from "../components/Welcome.svelte";   
+    import Welcome from "../components/Welcome.svelte";  
+    import Featured from "../components/Featured.svelte";
+    import Footer from "../components/Footer.svelte";
 </script>
 
 <Header/>
 <Welcome/>
+<Featured/>
+<Footer/>

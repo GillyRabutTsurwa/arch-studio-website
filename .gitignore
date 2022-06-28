@@ -6,7 +6,6 @@ project
 
 ## je vais restaurer une apres a la fin de l'appli
 netlify.toml
-vercel.json
 
 package-lock.json
 .browserslistrc

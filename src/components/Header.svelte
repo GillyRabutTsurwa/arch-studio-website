@@ -90,7 +90,7 @@
     .header figure {
         position: relative;
         width: 100%;
-        height: 70vh;
+        height: 80vh;
         background-image: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.2)), url(../static/image-hero-paramour.jpg);
         background-repeat: no-repeat;
         background-size: cover;
