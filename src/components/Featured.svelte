@@ -1,4 +1,5 @@
 <script>
+    import Button from "./shared/Button.svelte";
     import cardOne from "../static/image-del-sol.jpg";
     import cardTwo from "../static/image-228b.jpg";
     import cardThree from "../static/image-prototype.jpg";
@@ -8,7 +9,9 @@
 <div class="featured">
     <div class="featured__title">
         <h4>Featured</h4>
-        <button>See All &rarr;</button>
+        <Button>
+            <span slot="text">See All &rarr;</span>
+        </Button>
     </div>
     <div class="featured__cards">
         <div class="card-1"></div>

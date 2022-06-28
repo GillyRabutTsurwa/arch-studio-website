@@ -1,5 +1,6 @@
 <script>
     import photo from "../static/image-welcome.jpg";
+    import Button from "./shared/Button.svelte";
 </script>
 
 <div class="welcome">
@@ -25,7 +26,9 @@
             <span>Small team,</span>
             <span>big ideas</span>
         </h5>
-        <button>About Us &rarr;</button>
+        <Button>
+            <span slot="text">About Us &rarr;</span>
+        </Button>
     </div>
 </figure>
 
@@ -58,13 +61,15 @@
         grid-row: 3 / 4;
         font-size: 2.5rem;
         line-height: 1.5;
+        transform: translateY(-20%);
+
     }
 
     .text p {
         width: 50%;
         position: relative;
-        transform: translate(50%, -80%);
-
+        transform: translateX(50%);
+        margin-bottom: 3rem;
     }
 
     .test {

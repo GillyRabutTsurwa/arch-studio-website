@@ -1,48 +1,30 @@
 <script>
-    import { url } from '@roxi/routify';
+    import Button from "./shared/Button.svelte";
     import photo from "../static/image-hero-paramour.jpg";
 
 </script>
 
 <header class="header">
-    <p class="indicator">home</p>
-    <div>
-        <nav class="navigation">
-            <h1>Arch</h1>
-            <ul class="navigation__list">
-                <li class="navigation__list--item">
-                    <a href={$url("./portfolio")}>Portfolio</a>
-                </li>
-                <li class="navigation__list--item">
-                    <a href={$url("./about")}>About Us</a>
-                </li>
-                <li class="navigation__list--item">
-                    <a href={$url("./contact")}>Contact</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <figure>
-            <div>
-                <h2>Project Paramour</h2>
-                <p>Project made for an art museum near Southwest London,</p>
-                <p>Project Paramour is a statement of bold, modern architecture</p>
-                <button>See Our Portfolio &rarr;</button>
-            </div>
-            <ul>
-                <li><span>01</span></li><li><span>02</span></li><li><span>03</span></li><li><span>04</span></li>
-            </ul>
-        </figure>
-    </div>
+    <figure>
+        <div>
+            <h2>Project Paramour</h2>
+            <p>Project made for an art museum near Southwest London,</p>
+            <p>Project Paramour is a statement of bold, modern architecture</p>
+            <Button/>
+        </div>
+        <ul>
+            <li><span>01</span></li><li><span>02</span></li><li><span>03</span></li><li><span>04</span></li>
+        </ul>
+    </figure>
 </header>
 
 
 <style>
-    .indicator {
-        position: relative;
+    /* .indicator {
+        position: absolute; 
         writing-mode: vertical-rl;
-        right: 6.5%;
         top: 14rem;
+        left: 4%;
         text-transform: uppercase;
         color: #BBB;
     }
@@ -56,19 +38,19 @@
         height: 10.5rem;
         border: 1px solid currentColor;
 
-    }
+    } */
 
     .header {
          width: 100%;
          margin-bottom: 20rem;
     }
-
+   /*
     .navigation,
     .navigation__list {
         display: flex;
     }
 
-    .navigation {
+  .navigation {
         align-items: center;
         margin-bottom: 2.5rem;
 
@@ -85,7 +67,7 @@
 
     .navigation__list--item {
         margin-right: 4rem;
-    }
+    } */
 
     .header figure {
         position: relative;

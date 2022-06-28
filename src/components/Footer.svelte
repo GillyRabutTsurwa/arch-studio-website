@@ -1,4 +1,5 @@
 <script>
+    import Button from "./shared/Button.svelte";
     import { url } from '@roxi/routify';
 </script>
 
@@ -17,7 +18,8 @@
             </li>
         </ul>
     </nav>
-    <button>See Our Portfolio &rarr;</button>
+    <!-- je vais addresser le code dessous plus tard -->
+    <Button id="test" class="btn-footer"/>
 </footer>
 
 <style>
@@ -27,6 +29,7 @@
         width: 60vw;
         margin: 0 auto;
         display: flex;
+        align-items: center;
     }
 
     .footer-nav {
@@ -55,7 +58,13 @@
         font-size: 4rem;
     }
 
-    .footer button {
+    /* NOTE: ca marche pas */
+    /* .footer button {
         align-self: center;
+        transform: translateX(-5rem);
+    } */
+    #test {
+        align-self: center;
+        transform: translateX(-5rem);
     }
 </style>
