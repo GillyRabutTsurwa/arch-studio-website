@@ -60,6 +60,7 @@
 
     .header {
          width: 100%;
+         margin-bottom: 20rem;
     }
 
     .navigation,
