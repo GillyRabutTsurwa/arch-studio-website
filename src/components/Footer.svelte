@@ -45,10 +45,24 @@
         width: 100%;
         margin-left: 3rem;
         list-style-type: none;
+        color: #7D828F;
     }
 
-    .footer-nav__list li {
-        margin-right: 3rem;
+    .footer-nav__list--item {
+        margin-right: 4rem;
+    }
+
+    .footer-nav__list--item a:link,
+    .footer-nav__list--item a:visited {
+        text-decoration: none;
+        color: #7D828F;
+        border-bottom: 0.5px solid transparent;
+        transition: all 0.5s ease-in;
+    }
+
+    .footer-nav__list--item a:hover,
+    .footer-nav__list--item a:active {
+        border-bottom: 0.5px solid currentColor;
     }
 
     .footer-nav h4 {
@@ -56,15 +70,5 @@
         color: #fff;
         padding: 5rem;
         font-size: 4rem;
-    }
-
-    /* NOTE: ca marche pas */
-    /* .footer button {
-        align-self: center;
-        transform: translateX(-5rem);
-    } */
-    #test {
-        align-self: center;
-        transform: translateX(-5rem);
     }
 </style>

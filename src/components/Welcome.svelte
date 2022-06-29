@@ -1,6 +1,7 @@
 <script>
     import photo from "../static/image-welcome.jpg";
     import Button from "./shared/Button.svelte";
+    import Subtitle from "./shared/Subtitle.svelte";
 </script>
 
 <div class="welcome">
@@ -22,10 +23,10 @@
 <!-- j'ai decidé de le mettre ici -->
 <figure class="small-team">
     <div>
-        <h5>
+        <Subtitle color="light">
             <span>Small team,</span>
             <span>big ideas</span>
-        </h5>
+        </Subtitle>
         <Button>
             <span slot="text">About Us &rarr;</span>
         </Button>
@@ -51,7 +52,7 @@
     h4 {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-        transform: translate(25%, -20rem);
+        transform: translate(25%, -17.5rem);
         position: relative;
         
         font-size: 6rem;
@@ -96,7 +97,7 @@
     .small-team div {
         position: absolute;
         top: 40%;
-        left: 17%;
+        left: 17.25%;
     }
 
     .small-team div h5 {
@@ -104,7 +105,12 @@
         color: #fff;
     }
 
-    .small-team div h5 span {
+    /* le composant Subtitle est un h2, voici pourquoi le code ci-dessous marche bien */
+    .small-team div h2 span {
         display: block;
     }
+
+    /* span {
+        display: block;
+    } */
 </style>

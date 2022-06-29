@@ -5,102 +5,81 @@
 </script>
 
 <header class="header">
-    <figure>
-        <div>
-            <h2>Project Paramour</h2>
-            <p>Project made for an art museum near Southwest London,</p>
-            <p>Project Paramour is a statement of bold, modern architecture</p>
+    <figure class="header__img-area">
+        <div class="header__title-n-text">
+            <h2 class="header__title">Project Paramour</h2>
+            <p class="header__text">
+                <span>Project made for an art museum near Southwest London,</span>
+                <span>Project Paramour is a statement of bold, modern architecture</span>
+            </p>
             <Button/>
         </div>
-        <ul>
-            <li><span>01</span></li><li><span>02</span></li><li><span>03</span></li><li><span>04</span></li>
+        <ul class="header__carousel-btn__list">
+            {#each Array(4) as _, index}
+                <li><span>{index + 1}</span></li>
+            {/each}
         </ul>
     </figure>
 </header>
 
 
 <style>
-    /* .indicator {
-        position: absolute; 
-        writing-mode: vertical-rl;
-        top: 14rem;
-        left: 4%;
-        text-transform: uppercase;
-        color: #BBB;
-    }
-
-    .indicator::before {
-        content: "";
-        position: absolute;
-        top: -14.5rem;
-        right: 0.75rem;
-        width: 1px;
-        height: 10.5rem;
-        border: 1px solid currentColor;
-
-    } */
-
     .header {
          width: 100%;
          margin-bottom: 20rem;
     }
-   /*
-    .navigation,
-    .navigation__list {
-        display: flex;
-    }
-
-  .navigation {
-        align-items: center;
-        margin-bottom: 2.5rem;
-
-    }
-
-    h1 {
-        margin-right: 2.5rem;
-        font-size: 6rem;
-    }
-
-    .navigation__list {
-        list-style:none;
-    }
-
-    .navigation__list--item {
-        margin-right: 4rem;
-    } */
 
     .header figure {
         position: relative;
         width: 100%;
         height: 80vh;
-        background-image: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.2)), url(../static/image-hero-paramour.jpg);
+        background-image: linear-gradient(to right, rgba(0,0,0, 0.7), rgba(0,0,0, 0.4)), url(../static/image-hero-paramour.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
     }
 
-    figure div {
+    .header__title {
+        font-size: 9.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .header__text {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .header__text span {
+        display: block;
+        line-height: 1.5;
+    }
+
+    .header__img-area div {
         position: absolute;
         top: 30%;
         left: 15%;
         color: #fff;
     }
 
-    figure ul {
+    .header__img-area .header__carousel-btn__list {
         position: absolute;
         bottom: -0.4rem;
+        font-weight: 500;
+        /* TESTING */
+        display: flex;
     }
 
-    figure ul li {
+    .header__img-area .header__carousel-btn__list li {
         position: relative;
         display: inline-block;
         width: 6.5rem;
         height: 6.5rem;
         background-color: #fff;
         color: #333;
+        cursor: pointer;
     }
 
-    figure ul li span {
+    .header__img-area .header__carousel-btn__list li span {
         
         position: absolute;
         top: 50%;

@@ -11,6 +11,8 @@
         padding: 2rem 3.5rem;
         background-color: #333;
         color: #eee;
+        font-weight: 700;
+        font-size: 2rem;
     }
 
     .btn-footer {

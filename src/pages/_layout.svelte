@@ -6,7 +6,5 @@
 </script>
 
 <Navigation pageTitle={currentPageTitle}/>
-
-<!-- routify:options preload="proximity" -->
 <slot />
 <Footer/>
